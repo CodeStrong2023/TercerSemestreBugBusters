@@ -27,7 +27,9 @@ public class mundoPC {
         orden1.agregarComputadora(computadoraHP);
         orden1.agregarComputadora(computadoraGamer);
 
-        // Agregar más computadoras a la orden1 hasta tener 10 elementos
+      //Crear más objetos de tipo computadora con todos sus elementos
+        //Completar una lista en el objeto orden1 que llegue a los 10 elementos
+
         Monitor monitorDell = new Monitor("Dell", 15);
         Teclado tecladoDell = new Teclado("USB", "Dell");
         Raton ratonDell = new Raton("USB", "Dell");
@@ -40,9 +42,7 @@ public class mundoPC {
         Computadora computadoraLenovo = new Computadora("Computadora Lenovo", monitorLenovo, tecladoLenovo, ratonLenovo);
         orden1.agregarComputadora(computadoraLenovo);
         
-        //Crear más objetos de tipo computadora con todos sus elementos
-        //Completar una lista en el objeto orden1 que llegue a los 10 elementos
-
+        
         Monitor monitorSony = new Monitor("Sony", 24);
         Teclado tecladoSony = new Teclado("Bluetooth", "Sony");
         Raton ratonSony = new Raton("Bluetooth", "Sony");
