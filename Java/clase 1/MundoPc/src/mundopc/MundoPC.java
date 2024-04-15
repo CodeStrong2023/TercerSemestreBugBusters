@@ -10,7 +10,7 @@ import ar.com.system2023.mundopc.*;
  *
  * @author Franco
  */
-public class mundoPC {
+public class MundoPC {
     public static void main(String[] args) {
         Monitor monitorHP = new Monitor("HP", 13); //importar la clase
         Teclado tecladoHP = new Teclado("Bluetooth", "HP");
@@ -86,15 +86,9 @@ public class mundoPC {
         orden1.agregarComputadora(computadoraLG);
         
         orden1.mostrarOrden();
-    }
-}
-
-
         
         Computadora computadoraVarias = new Computadora("Computadora de diferentes marcas", monitorHP, tecladoGamer, ratonHP);
         orden2.agregarComputadora(computadoraVarias);
-        
-        orden1.mostarOrden();
-        orden2.mostarOrden();
+        orden2.mostrarOrden();
     }
 }
