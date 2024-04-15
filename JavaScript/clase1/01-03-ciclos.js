@@ -13,3 +13,9 @@ do{
     conteo++;
 }while(conteo < 3);
 console.log("Fin del ciclo do while");
+
+//for
+for( let contando = 0; contando < 3; contando++){
+    console.log(contando); 0, 1, 2
+}
+console.log("Fin del ciclo for")
