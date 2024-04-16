@@ -19,3 +19,13 @@ for( let contando = 0; contando < 3; contando++){
     console.log(contando); 0, 1, 2
 }
 console.log("Fin del ciclo for")
+
+//Break
+for(let contando = 0; contando <= 10; contando++){
+    if(contando % 2 == 0){
+        console.log(contando);
+        break;
+         //Muestra todos los pares
+    }
+}
+console.log("Termina el ciclo al encontra el primer número par");
