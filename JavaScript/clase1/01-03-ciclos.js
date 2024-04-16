@@ -31,11 +31,11 @@ for(let contando = 0; contando <= 10; contando++){
 console.log("Termina el ciclo al encontra el primer número par");
 
 // La palabra continue y etiquetas Labels
-
-for(Let contando = 0; cotando <= 10; contando++);{
+inicio:
+for(let contando = 0; contando <= 10; contando++){
     if(contando % 2 !== 0){
-        continue; // Esto va a continuar a la siguiente iteración
+        break inicio; // Esto va a continuar a la siguiente iteración
     }
-    console.log(contando);
+    console.log(contando);;
 }
 console.log("Termina el ciclo");
