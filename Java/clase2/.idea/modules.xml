@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArgumentosVariables/ArgumentosVariables.iml" filepath="$PROJECT_DIR$/ArgumentosVariables/ArgumentosVariables.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Enumeraciones/Enumeraciones.iml" filepath="$PROJECT_DIR$/Enumeraciones/Enumeraciones.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/clase2.iml" filepath="$PROJECT_DIR$/.idea/clase2.iml" />
+    </modules>
+  </component>
+</project>
