@@ -1,4 +1,7 @@
-class FiguraGeometrica:
+from abc import ABC, abstractmethod
+#ABC significa: Abstrac Base Class, convierte una clase abstracta
+
+class FiguraGeometrica(ABC):
     def __init__(self, ancho, alto):
         if self._validar_valores(ancho):
             self._ancho = ancho
@@ -32,6 +35,10 @@ class FiguraGeometrica:
             self._alto = alto
         else:
             print(f"Valor erroneo alto: {alto}")
+    
+    @abstractmethod
+    def calcular_area(self):
+        pass
 
     def __str__(self):
         return f"FiguraGeometrica [Ancho: {self._ancho}, Alto: {self._alto}]"
