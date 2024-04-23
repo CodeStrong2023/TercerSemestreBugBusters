@@ -8,7 +8,7 @@ cuadrado1.alto = 7
 cuadrado1.ancho = 7
 # print(cuadrado1.ancho)
 # print(cuadrado1.alto)
-print(f'Cálculo del área del cuadrado : {cuadrado1.Calcular_area()}')
+print(f'Cálculo del área del cuadrado : {cuadrado1.calcular_area()}')
 
 #MRO = Method Resolution Order
 # print(Cuadrado.mro())
