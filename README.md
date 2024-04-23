@@ -9,7 +9,7 @@ Repositorio del grupo BugBusters 👻 del 3er Semestre de la Tecnicatura en Prog
 * _Nicolás Nuñez_
 * _Marcos Senn_
 * _Santiago Segura_
-* * _Facundo Mendez_
+* _Facundo Mendez_
 
 ## Sobre este repositorio: 
 En este repositorio se encuentra todo el codigo 💻 de las actividades y tareas realizadas durante el cursado del tercer semestre de la tecnicatura en las materias de **Programación 3**, **Laboratorio 3** y demás materias.
