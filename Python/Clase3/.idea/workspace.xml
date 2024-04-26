@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="600cb15c-f44b-4a68-b238-19672e772111" name="Changes" comment="" />
+    <list default="true" id="600cb15c-f44b-4a68-b238-19672e772111" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Sobrecarga_operadores.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestOrdenes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orden.py" beforeDir="false" afterPath="$PROJECT_DIR$/Orden.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Producto.py" beforeDir="false" afterPath="$PROJECT_DIR$/Producto.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,12 +31,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/david/OneDrive/Escritorio/TECNICATURA/3° SEMESTRE/LABORATORIO 3/Python/Clase3&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "nicolasnuñez",
+    "last_opened_file_path": "C:/Users/54260/TercerSemestreBugBusters/Python/Clase3"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python.Orden">
     <configuration name="Orden" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Clase3" />
@@ -58,6 +66,9 @@
       <module name="Clase3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="C:\Users\david\PycharmProjects\pythonProject\venv\Scripts\python.exe" />
       <option name="SDK_NAME" value="Python 3.11 (pythonProject)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />

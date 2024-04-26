@@ -16,11 +16,11 @@ class Producto:
         self._nombre = nombre
 
     @property
-    def precio(selfself):
+    def precio(self):
         return self._precio
 
     @precio.setter
-    def precio(self):
+    def precio(self, precio):
         self._precio = precio
     # Sobre escribimos el metodo str
     def __str__(self):
