@@ -1,4 +1,4 @@
-miFuncion(8,2); //Esto se le conoce como hosting
+miFuncion(8,2); //Esto se le conoce como hoisting
 
 function miFuncion(a, b){
     //console.log("Sumamos: "+ (a+ b ));
@@ -22,3 +22,21 @@ console.log(resultado);
 (function(a, b){
     console.log('Ejecutando la funcion: ' + (a + b));
 })(9, 6);
+
+
+//Las funciones son objetos
+console.log(typeof miFuncion);
+function miFuncionDos(a, b){
+    console.log(arguments.length);
+}
+
+miFuncionDos(5, 7, 3, 6)
+
+// toString
+var miFuncionTexto = miFuncionDos.toString();
+console.log(miFuncionTexto);
+
+//Funciones flecha
+const sumarFuncionTipoFlecha = (a, b) => a + b;
+resultado = sumarFuncionTipoFlecha(3, 2);
+console.log(resultado);
