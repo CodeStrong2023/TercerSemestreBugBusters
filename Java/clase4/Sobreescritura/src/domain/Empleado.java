@@ -1,6 +1,13 @@
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package domain;
 
+/**
+ *
+ * @author Franco
+ */
 public class Empleado {
     protected String nombre;
     protected double sueldo;
@@ -10,7 +17,7 @@ public class Empleado {
         this.sueldo = sueldo;
     }
     
-    // Metodo para la sobreescritura
+    //Método para la sobreescritura
     public String obtenerDetalles(){
         return "Nombre: "+this.nombre+", Sueldo: "+this.sueldo;
     }
@@ -30,5 +37,4 @@ public class Empleado {
     public void setSueldo(double sueldo) {
         this.sueldo = sueldo;
     }
-    
 }
