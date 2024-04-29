@@ -11,7 +11,7 @@ import domain.Gerente;
  *
  * @author Franco
  */
-public class TestSobreescritura {
+public class TestInstanceOf {
     public static void main(String[] args) {
         Empleado empleado1 = new Empleado("Nicolas", 4500.55);
         //determinarTipo(empleado1);
@@ -23,6 +23,8 @@ public class TestSobreescritura {
     public static void determinarTipo(Empleado empleado){
         if (empleado instanceof Gerente) {
             System.out.println("Es de tipo Gerente");
+            Gerente  gerente = (Gerente)empleado;
+            gerente.getDepartameto();
         }
         else if (empleado instanceof Empleado) {
             System.out.println("Es de tipo Empleado");
