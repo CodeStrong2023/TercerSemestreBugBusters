@@ -14,8 +14,9 @@ import domain.Gerente;
 public class TestSobreescritura {
     public static void main(String[] args) {
         Empleado empleado1 = new Empleado("Nicolas", 4500.55);
-        determinarTipo(empleado1);
+        //determinarTipo(empleado1);
         empleado1 = new Gerente("Jose", 5000, "Sistemas");
+        determinarTipo(empleado1);
 
     }
 
