@@ -1,4 +1,4 @@
-from Python.Clase3.Empleado import Empleado
+from Empleado import Empleado
 
 
 class Gerente(Empleado):
