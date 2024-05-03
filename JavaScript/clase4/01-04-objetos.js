@@ -23,3 +23,11 @@ persona2.nombre = 'Juan';
 persona2.direccion = 'Salada 14'
 persona2.telefono = '2604010203'
 console.log(persona2.telefono);
+
+
+console.log(persona['apellido']);//accedemos como si fuera un arreglo
+
+//for in
+for(let i in persona){
+    console.log(persona[i])
+}
