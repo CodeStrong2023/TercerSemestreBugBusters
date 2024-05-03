@@ -31,3 +31,13 @@ console.log(persona['apellido']);//accedemos como si fuera un arreglo
 for(let i in persona){
     console.log(persona[i])
 }
+
+persona.apellido = "Lopez"; //Cambiamos dinamicamente un valor del objeto
+console.log(persona)
+//Agregar una nueva propiedad al objeto
+persona.direccion = "Av. Python";
+console.log(persona)
+
+//Eliminar una propiedad del objeto
+delete persona.direccion;
+console.log(persona)
