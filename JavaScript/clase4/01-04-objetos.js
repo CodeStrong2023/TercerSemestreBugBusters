@@ -43,3 +43,27 @@ console.log(persona)
 //Eliminar una propiedad del objeto
 delete persona.direccion;
 console.log(persona)
+
+//Distintas formas de imprimir un objeto
+//Numero 1: La mas sencilla: concatenar cada vakir de cada propiedad
+console.log('Distinta forma de limpiar un objeto: forma 1');
+console.log(persona.nombre+', '+persona.apellido);
+
+//Numero 2: A traves del ciclo for in
+console.log('Distinta forma de imprimir un objeto: forma 2');
+
+for(nombrePropiedad in persona){
+    console.log(persona[nombrePropiedad]);
+}
+
+//Numero 3: La funcion Object.values()
+console.log('Distinta forma de imprimir un objeto: forma 3');
+
+let personaArray = Object.values(persona);
+console.log(personaArray);
+
+//Numero 4: Utilizamos el metodo JSON.stringify
+console.log('Distinta forma de imprimir un objeto: forma 4');
+
+let personaString = JSON.stringify(persona);
+console.log(personaString);
