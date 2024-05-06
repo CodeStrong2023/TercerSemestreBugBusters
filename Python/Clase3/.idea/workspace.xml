@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="600cb15c-f44b-4a68-b238-19672e772111" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../JavaScript/javascript.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Clase2/clase2/Persona.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase2/clase2/Persona.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Clase3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Clase3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +36,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "FrancoPizarro",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Franco/TUP Bug Busters/TercerSemestreBugBusters/Python/Clase4",
+    "git-widget-placeholder": "nicolasnuñez",
+    "last_opened_file_path": "C:/Users/Franco/TUP Bug Busters/TercerSemestreBugBusters/Python/Clase3",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
