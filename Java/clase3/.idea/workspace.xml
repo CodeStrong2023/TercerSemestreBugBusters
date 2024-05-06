@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="38667a99-f5c2-48e8-801f-7713cdf9ca63" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../clase2/.idea/clase2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/.idea/clase2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/BloquesInicializacion/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/BloquesInicializacion/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/BloquesInicializacion/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/BloquesInicializacion/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/BloquesInicializacion/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/BloquesInicializacion/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/BloquesInicializacion/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/BloquesInicializacion/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/BloquesInicializacion/BloquesInicializacion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/BloquesInicializacion/BloquesInicializacion.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/BloquesInicializacion/src/domain/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/BloquesInicializacion/src/domain/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/BloquesInicializacion/src/domain/TestBloqueInicializacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/BloquesInicializacion/src/domain/TestBloqueInicializacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/Enumeraciones/Enumeraciones.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/Enumeraciones/Enumeraciones.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/Enumeraciones/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/Enumeraciones/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/Enumeraciones/build/classes/.netbeans_automatic_build" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/Enumeraciones/build/classes/.netbeans_automatic_build" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/Enumeraciones/build/classes/.netbeans_update_resources" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/Enumeraciones/build/classes/.netbeans_update_resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/Enumeraciones/build/classes/enumeraciones/Continentes.class" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/Enumeraciones/build/classes/enumeraciones/Continentes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/Enumeraciones/build/classes/enumeraciones/Dias.class" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/Enumeraciones/build/classes/enumeraciones/Dias.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/Enumeraciones/build/classes/test/TestEnumeraciones$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/Enumeraciones/build/classes/test/TestEnumeraciones$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/Enumeraciones/build/classes/test/TestEnumeraciones.class" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/Enumeraciones/build/classes/test/TestEnumeraciones.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/Enumeraciones/manifest.mf" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/Enumeraciones/manifest.mf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/Enumeraciones/nbproject/build-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/Enumeraciones/nbproject/build-impl.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/Enumeraciones/nbproject/genfiles.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/Enumeraciones/nbproject/genfiles.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/Enumeraciones/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/Enumeraciones/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/Enumeraciones/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/Enumeraciones/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/Enumeraciones/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/Enumeraciones/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/Enumeraciones/nbproject/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/Enumeraciones/nbproject/project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/Enumeraciones/src/enumeraciones/Continentes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/Enumeraciones/src/enumeraciones/Continentes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/Enumeraciones/src/enumeraciones/Dias.java" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/Enumeraciones/src/enumeraciones/Dias.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clase2/Enumeraciones/src/test/TestEnumeraciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/../clase2/ArgumentosVariables/src/Enumeraciones/src/test/TestEnumeraciones.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2fpMHiNc1BeyiYIu8AbppI9OZMt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "nicolasnuñez",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.TestModificadoresAcceso">
+    <configuration name="TestAutoboxingUnboxing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestAutoboxingUnboxing" />
+      <module name="AutoboxingUnboxing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDefault" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="paquete1.TestDefault" />
+      <module name="ModificadoresAcceso" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="paquete1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestForEach" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestForEach" />
+      <module name="ForEach" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestModificadoresAcceso" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestModificadoresAcceso" />
+      <module name="ModificadoresAcceso" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestModificadoresAcceso" />
+        <item itemvalue="Application.TestDefault" />
+        <item itemvalue="Application.TestForEach" />
+        <item itemvalue="Application.TestAutoboxingUnboxing" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="38667a99-f5c2-48e8-801f-7713cdf9ca63" name="Changes" comment="" />
+      <created>1714493480988</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714493480988</updated>
+      <workItem from="1714493482892" duration="67000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
