@@ -1,5 +1,10 @@
-
+resultado = None
+a = '10'
+b = 0
 try:
-    10/0
-except Exception as e:
+    resultado = a / b  # modificamos
+except ZeroDivisionError as e:
     print(f'Ocurrió un error: {e}')
+
+print(f'El resultado es: {resultado}')
+print('seguimos...')
