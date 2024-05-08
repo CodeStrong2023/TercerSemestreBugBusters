@@ -8,8 +8,18 @@ let persona = {
     apellido: "Davington",
     email: "ddavington@gmail.com",
     edad: 28,
+    idioma: 'es',
+    get lang(){ //Este es el metodo get
+        return this.idioma.toUpperCase(); //Convierte las minusculas a mayusculas
+    },
+    set lang(Lang){
+        this.idioma = lang.toUpperCase()
+    },
     nombreCompleto: function(){//metodo o funcion en JavaScript
         return this.nombre+' '+this.apellido;
+    },
+    get nombreEdad(){ //Este es el metodo get
+        return 'El nombre es: ' + this.nombre + ', Edad: ' + this.edad;
     }
 }
 console.log(persona.nombre);
@@ -67,3 +77,10 @@ console.log('Distinta forma de imprimir un objeto: forma 4');
 
 let personaString = JSON.stringify(persona);
 console.log(personaString);
+
+console.log('Comenzamos a utilizar el metodo GET');
+console.log(persona.nombreEdad);
+
+console.log('Comenzamos con el metodo GET para idiomas');
+persona.lang = 'en';
+console.log(persona.lang);
