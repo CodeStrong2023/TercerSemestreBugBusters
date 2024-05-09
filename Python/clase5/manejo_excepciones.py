@@ -1,7 +1,8 @@
 resultado = None
-a = 7
-b = 5
+
 try:
+    a = int(input("digite primer numero"))
+    b = int(input("digite segundo numero"))
     resultado = a / b  # modificamos
 
 except TypeError as e:
