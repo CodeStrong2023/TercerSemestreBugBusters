@@ -13,6 +13,11 @@ except ZeroDivisionError as e:
 
 except  Exception as e:
     print('Exception - Ocurrió un error: {type(e)}')
+else:
+    print("No se arrojo ninguna excepción")
+finally: #siempre se va a ejecutar
+    print("Ejecución de este  bloque finally")
+    
 
 print(f'El resultado es: {resultado}')
 print('seguimos...')

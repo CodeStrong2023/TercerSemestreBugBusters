@@ -101,7 +101,31 @@ let madre = new Persona3('Laura', 'Contrera', 'contreral@gmail.com');
 console.log(madre);
 console.log(madre.nombreCompleto());
 
+//Difrentes formas de crear objetos
+//caso objeto1
+let miObjeto= new Object();
+//caso numero 2
+let miObjeto2= {};
 
+//caso String 2
+let miCadena2= 'Hola'; //Esta es la sintaxis simplificada y recomendada
 
+//caso con números 1
+let miNumero= new Number(1);//Es la forma1 no recomendable
+//caso con 2
+let miNumero2= 1; //Sintaxis recomendada
 
+//caso boolean 2
+let miBoolean1= new Boolean(false); //forma1
+//caso boolean 2
+let miBloolean2= false; //sintaxis recomendada
 
+//caso Arreglos 1
+let miArreglo1= new Array(); //Forma1
+//caso Arreglos 2
+let miArreglo2= []; //Sintaxis recomendada
+
+//caso function 1
+let miFuncion1= new funcction(){};//Todo despues de new es considerado objeto
+//caso function 2
+let mifunction= function(){}; //Notacion simplificada y recomendada
