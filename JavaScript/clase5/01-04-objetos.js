@@ -145,6 +145,7 @@ let persona4 = {
     apellido: 'Perez',
     nombreCompleto2: function(titulo, telefono){
         return titulo+': '+this.nombre+' '+this.apellido+ ' '+telefono;
+        //return this.nombre + " " + this.apellido;
     }
 }
 
@@ -155,3 +156,11 @@ let persona5 = {
 
 console.log(persona4.nombreCompleto2('Lic.', '4684313215'));
 console.log(persona4.nombreCompleto2.call(persona5, 'Ing.', '45465178121'));
+
+//Método Apply
+let arreglo = ["Ing.", "2604339900"];
+console.log(persona4.nombreCompleto2.apply(persona5, arreglo));
+
+/*La única diferencia entre call y Apply es que 
+a call se le pasan directamente los argumentos y Apply va necesitar que tengamos a disposición un arreglo 
+en el que estarán ingresados como elementos de ese arreglo los argumentos necesarios para el método que los está requiriendo. */
