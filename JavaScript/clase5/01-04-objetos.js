@@ -128,7 +128,7 @@ let miArreglo1= new Array(); //Forma1
 let miArreglo2= []; //Sintaxis recomendada
 
 //caso function 1
-let miFuncion1= new funcction(){};//Todo despues de new es considerado objeto
+let miFuncion1= new function(){};//Todo despues de new es considerado objeto
 //caso function 2
 let mifunction= function(){}; //Notacion simplificada y recomendada
 
@@ -138,3 +138,20 @@ console.log(padre.telefono);
 console.log(madre.telefono);
 madre.telefono = '81828282882'
 console.log(madre.telefono);
+
+//uso de call
+let persona4 = {
+    nombre: 'Juan',
+    apellido: 'Perez',
+    nombreCompleto2: function(titulo, telefono){
+        return titulo+': '+this.nombre+' '+this.apellido+ ' '+telefono;
+    }
+}
+
+let persona5 = {
+    nombre: 'Carlos',
+    apellido: 'Lara'
+}
+
+console.log(persona4.nombreCompleto2('Lic.', '4684313215'));
+console.log(persona4.nombreCompleto2.call(persona5, 'Ing.', '45465178121'));
