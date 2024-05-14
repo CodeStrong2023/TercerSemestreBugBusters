@@ -25,10 +25,10 @@ public class TestClaseObject {
     } else{
         System.out.println("Los objetos son distintos en contenido");
     }
-    if(empleado1.hasCode() == empleado2.hasCode()){
-        System.out.println("El valor hasCode es igual");
+    if(empleado1.hashCode() == empleado2.hashCode()){
+        System.out.println("El valor hashCode es igual");
     } else{
-        System.out.println("El valor hasCode es diferente");
+        System.out.println("El valor hashCode es diferente");
     }
     }
 }
