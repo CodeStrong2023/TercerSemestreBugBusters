@@ -100,6 +100,7 @@ console.log(padre.nombreCompleto()); //Utilizamos la funcion
 
 let madre = new Persona3('Laura', 'Contrera', 'contreral@gmail.com');
 console.log(madre);
+<<<<<<< HEAD:JavaScript/clase5/01-04-objetos-clase5.js
 console.log(madre.telefono); //la propiedad no esta definida
 console.log(madre.nombreCompleto());
 
@@ -151,7 +152,6 @@ let persona4 ={
         return titulo+': '+this.nombre+''+this.apellido+''+telefono;
         //return this.nombre+''+this.apellido;
     }
-
 }
 
 let persona5 = {
