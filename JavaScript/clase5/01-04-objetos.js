@@ -94,14 +94,75 @@ function Persona3(nombre, apellido, email){ //constructor
 }
 let padre = new Persona3('Leo', 'Lopez', 'lopezl@gmail.com');
 padre.nombre = 'Luis'; //mopdificamos el nombre
+padre.telefono = '54 9 2604 908765'; //una propiedad exlusiva del objeto padre
 console.log(padre);
 console.log(padre.nombreCompleto()); //Utilizamos la funcion
 
 let madre = new Persona3('Laura', 'Contrera', 'contreral@gmail.com');
 console.log(madre);
+console.log(madre.telefono); //la propiedad no esta definida
 console.log(madre.nombreCompleto());
 
+//Diferentes forams de crear objetos
 
+//caso objeto 1
+let miOBjeto = new Object(); 
+//caso objeto 2 
+let miOBjeto2 = {}; //Esta opcion es breve y recomendada
 
+//caso String 1
+let miCadena1 = new String ('Hola'); //Sintaxis formal
+//caso String 2
+let miCadena2 = 'Hola'; //Esta es la sintaxis simplificada y recomendada
 
+//caso con numeros 1
+let miNumero = new Number(1);
+//caso numeros 2
+let miNumero2 = 1; //Sintaxis recomendada
 
+//caso boolean 1
+let miBoolean1 = new Boolean(false);
+//caso boolean 2
+let miBoolean2 = false; //Sintaxis recomendada
+
+//caso arreglos 1
+let miArreglo = new Array(); //Forma1 
+//caso arreglos 2
+let miArreglo2 = []; //Sintaxis recomendada
+
+//caso function 1
+let miFuncion1 = new function(){}; //Todo despues de new es considerado objeto
+//caso function 2
+let miFuncion2 = function(){}; //Notacion simplificada y recomendada
+
+//Uso de prototype 
+Persona3.prototype.telefono = '2604567890';
+console.log(padre);
+console.log(madre.telefono);
+madre.telefono = '5462604567890'
+console.log(madre.telefono);
+
+//Uso de cacll 
+
+let persona4 ={
+    nombre: 'Juan',
+    apellido: 'Perez',
+    nombreCompleto2: function(titulo, telefono){
+        return titulo+': '+this.nombre+''+this.apellido+''+telefono;
+        //return this.nombre+''+this.apellido;
+    }
+
+}
+
+let persona5 = {
+    nombre: 'Carlos',
+    apellido: 'Lara', 
+
+}
+
+console.log(persona4.nombreCompleto2('Licenciado', '2604569087'));
+console.log(persona4.nombreCompleto2.call(persona5, 'Ingeniero', '5492604239876'));
+
+//Metodo Apply
+let arreglo = ['Ingeniero', '5492604239876'];
+console.log(persona4.nombreCompleto2.apply(persona5, arreglo));
