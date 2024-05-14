@@ -95,6 +95,7 @@ function Persona3(nombre, apellido, email){ //constructor
 let padre = new Persona3('Leo', 'Lopez', 'lopezl@gmail.com');
 padre.nombre = 'Luis'; //mopdificamos el nombre
 padre.telefono = '54 9 2604 908765'; //una propiedad exlusiva del objeto padre
+padre.telefono = '123123123' //propiedad exclusiva del objeto padre
 console.log(padre);
 console.log(padre.nombreCompleto()); //Utilizamos la funcion
 
@@ -165,3 +166,68 @@ console.log(persona4.nombreCompleto2.call(persona5, 'Ingeniero', '5492604239876'
 //Metodo Apply
 let arreglo = ['Ingeniero', '5492604239876'];
 console.log(persona4.nombreCompleto2.apply(persona5, arreglo));
+=======
+console.log(madre.telefono) //propiedad no definida
+console.log(madre.nombreCompleto());
+
+//Difrentes formas de crear objetos
+//caso objeto1
+let miObjeto= new Object();
+//caso numero 2
+let miObjeto2= {};
+
+//caso String 2
+let miCadena2= 'Hola'; //Esta es la sintaxis simplificada y recomendada
+
+//caso con números 1
+let miNumero= new Number(1);//Es la forma1 no recomendable
+//caso con 2
+let miNumero2= 1; //Sintaxis recomendada
+
+//caso boolean 2
+let miBoolean1= new Boolean(false); //forma1
+//caso boolean 2
+let miBloolean2= false; //sintaxis recomendada
+
+//caso Arreglos 1
+let miArreglo1= new Array(); //Forma1
+//caso Arreglos 2
+let miArreglo2= []; //Sintaxis recomendada
+
+//caso function 1
+let miFuncion1= new function(){};//Todo despues de new es considerado objeto
+//caso function 2
+let mifunction= function(){}; //Notacion simplificada y recomendada
+
+//uso de prototype
+Persona3.prototype.telefono = '26178383838' //agrego tlefono a todos los objetos
+console.log(padre.telefono);
+console.log(madre.telefono);
+madre.telefono = '81828282882'
+console.log(madre.telefono);
+
+//uso de call
+let persona4 = {
+    nombre: 'Juan',
+    apellido: 'Perez',
+    nombreCompleto2: function(titulo, telefono){
+        return titulo+': '+this.nombre+' '+this.apellido+ ' '+telefono;
+        //return this.nombre + " " + this.apellido;
+    }
+}
+
+let persona5 = {
+    nombre: 'Carlos',
+    apellido: 'Lara'
+}
+
+console.log(persona4.nombreCompleto2('Lic.', '4684313215'));
+console.log(persona4.nombreCompleto2.call(persona5, 'Ing.', '45465178121'));
+
+//Método Apply
+let arreglo = ["Ing.", "2604339900"];
+console.log(persona4.nombreCompleto2.apply(persona5, arreglo));
+
+/*La única diferencia entre call y Apply es que 
+a call se le pasan directamente los argumentos y Apply va necesitar que tengamos a disposición un arreglo 
+en el que estarán ingresados como elementos de ese arreglo los argumentos necesarios para el método que los está requiriendo. */
