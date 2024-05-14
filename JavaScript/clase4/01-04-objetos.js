@@ -84,3 +84,5 @@ console.log(persona.nombreEdad);
 console.log('Comenzamos con el metodo GET para idiomas');
 persona.lang = 'en';
 console.log(persona.lang);
+
+//clase 4
