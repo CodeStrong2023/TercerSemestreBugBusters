@@ -1,3 +1,6 @@
+let persona3 = new Persona('Carla', 'Ponce');
+
+
 class Persona {
     constructor(nombre, apellido) {
         this._nombre = nombre;
