@@ -1,4 +1,4 @@
-let persona3 = new Persona('Carla', 'Ponce');
+//let persona3 = new Persona('Carla', 'Ponce'); esto no se debe hacer: Persona is not defined
 
 
 class Persona {
@@ -13,6 +13,14 @@ class Persona {
 
     set nombre(nombre) {
         this._nombre = nombre;
+    }
+
+    get apellido(){
+        return this._apellido;
+    }
+
+    set apellido(apellido){
+        this._apellido = apellido;
     }
 }
 
