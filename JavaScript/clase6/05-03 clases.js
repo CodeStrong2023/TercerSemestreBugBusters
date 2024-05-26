@@ -29,7 +29,12 @@ let persona1 = new Persona("Martin", "Perez");
 console.log(persona1.nombre);
 persona1.nombre = "Juan Carlos";
 console.log(persona1.nombre);
+persona1.apellido = "Sanchez";
+console.log(persona1._apellido);
+
 let persona2 = new Persona("Carlos", "Lara");
 persona2.nombre = "Maria Laura";
 //console.log(persona2);
 console.log(persona2.nombre);
+persona2.apellido = "Baldovin";
+console.log(persona2.apellido);
