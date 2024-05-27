@@ -26,6 +26,7 @@ class Persona { // Clase padre
 
 class Empleado extends Persona{ // Clase hija  
     constructor (departamento){
+        super(nombre, apellido);
         this._departamento = departamento;
     }
 
@@ -52,3 +53,7 @@ persona2.nombre = "Maria Laura";
 console.log(persona2.nombre);
 persona2.apellido = "Baldovin";
 console.log(persona2.apellido);
+
+let empleado1 = new Empleado('Maria', 'Gimenez', 'Sistemas');
+console.log(empleado1);
+console.log(empleado1._nombre);
