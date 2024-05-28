@@ -1,3 +1,5 @@
+const btnReiniciar = document.getElementById("btn-reincio");
+
 function numAleatorio() {
   return Math.round(Math.random() * 2) + 1;
 }
@@ -22,30 +24,37 @@ let pc = 0;
 let triunfos = 0;
 let perdidas = 0;
 
-while (triunfos < 3 && perdidas < 3) {
-  pc = numAleatorio();
-  jugador = prompt("Elige: 1 piedra, 2 papel, 3 tijera");
+function reiniciar(){
+  while (triunfos < 3 && perdidas < 3) {
+    pc = numAleatorio();
+    jugador = prompt("Elige: 1 piedra, 2 papel, 3 tijera");
 
-  //alert("Elige jugador: " + jugador);
-  alert("PC elige: " + eleccion(pc));
-  alert("Tu eliges: " + eleccion(jugador));
+    //alert("Elige jugador: " + jugador);
+    alert("PC elige: " + eleccion(pc));
+    alert("Tu eliges: " + eleccion(jugador));
 
-  //combate
-  if (pc == jugador) {
-    alert("Empate");
-  } else if (jugador == 1 && pc == 3) {
-    alert("Ganaste!!");
-    triunfos++;
-  } else if (jugador == 2 && pc == 1) {
-    alert("Ganaste!!");
-    triunfos++;
-  } else if (jugador == 3 && pc == 2) {
-    alert("Ganaste!!");
-    triunfos++;
-  } else {
-    alert("Perdiste!");
-    perdidas++;
+    //combate
+    if (pc == jugador) {
+      alert("Empate");
+    } else if (jugador == 1 && pc == 3) {
+      alert("Ganaste!!");
+      triunfos++;
+    } else if (jugador == 2 && pc == 1) {
+      alert("Ganaste!!");
+      triunfos++;
+    } else if (jugador == 3 && pc == 2) {
+      alert("Ganaste!!");
+      triunfos++;
+    } else {
+      alert("Perdiste!");
+      perdidas++;
+    }
   }
-}
+  alert("Ganaste " + triunfos + " veces. Perdiste " + perdidas + " veces");
+  jugador = 0;
+  pc = 0;
+  triunfos = 0;
+  perdidas = 0;
+}  
 
-alert("Ganaste " + triunfos + " veces. Perdiste " + perdidas + " veces");
+
