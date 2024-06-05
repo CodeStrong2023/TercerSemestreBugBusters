@@ -5,7 +5,7 @@ class CatalogoPeliculas:
     ruta_archivo = 'peliculas.txt'
 
     @classmethod
-    def agregar_pelicula(cls, pelicula):
+    def agregar_peliculas(cls, pelicula):
         with open(cls.ruta_archivo, 'a', encoding='utf-8') as archivo:
             archivo.write(f'{pelicula.nombre}\n')
 
@@ -16,6 +16,6 @@ class CatalogoPeliculas:
             print(archivo.read())
 
     @classmethod
-    def eliminar_pelicula(cls):
+    def eliminar_peliculas(cls):
         os.remove(cls.ruta_archivo)
         print(f'Archivo eliminado: {cls.ruta_archivo}')
