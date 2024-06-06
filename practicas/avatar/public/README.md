@@ -29,3 +29,5 @@ Utilizamos el manejo de DOM con los métodos: <br>
 Modificamos la función anterior para que modifique el documento html con el personaje que elegimos en vez de mostrar un alert.
 Agregamos una función para que se elgia un enemigo de forma random. <br>
 Uitlizamos el método [element.InnerHTMl](https://developer.mozilla.org/es/docs/Web/API/Element/innerHTML)
+### Segunda clase: 
+En esta clase creamos diferentes funciones para poder poder elegir el ataque de nuestro personaje y también que el enemigo eliga de forma aleatorio su ataque. 
