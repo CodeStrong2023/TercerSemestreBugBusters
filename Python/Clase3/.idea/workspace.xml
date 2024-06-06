@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="600cb15c-f44b-4a68-b238-19672e772111" name="Changes" comment="" />
-=======
-    <list default="true" id="600cb15c-f44b-4a68-b238-19672e772111" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../JavaScript/javascript.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Clase2/clase2/Persona.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Clase2/clase2/Persona.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Clase3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Clase3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python.txt" beforeDir="false" />
-    </list>
->>>>>>> 23162fc33a044d06b754a65423abf0d77ecac87e
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,12 +30,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "nicolasnuñez",
-<<<<<<< HEAD
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Franco/TUP Bug Busters/TercerSemestreBugBusters/Python/Clase4",
-=======
-    "last_opened_file_path": "C:/Users/Franco/TUP Bug Busters/TercerSemestreBugBusters/Python/Clase3",
->>>>>>> 23162fc33a044d06b754a65423abf0d77ecac87e
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
