@@ -32,6 +32,16 @@ class Persona { // Clase padre
         // El método que se ejecuta depende si es una referencia si es tipo padre o hija
         return this.nombreCompleto();
     }
+
+    //Metodo static: se asocia a la clase y no a los objetos
+    static saludar(){
+        console.log('Saludo desde este método static');
+    }
+
+    static saludar2(persona){
+        console.log(persona.nombre+' '+persona.apellido);
+    }
+
 }
 
 class Empleado extends Persona{ // Clase hija  
