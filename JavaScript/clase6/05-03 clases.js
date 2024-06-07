@@ -3,14 +3,14 @@
 
 class Persona { // Clase padre
 
-    static contadorObjetosPersona = 0; //Atributo estático
-    email = "Valor default email"; //Atributo no estático
+    static contadorPersonas = 0; //Atributo estático
+    //email = "Valor default email"; //Atributo no estático
 
     constructor(nombre, apellido) {
         this._nombre = nombre;
         this._apellido = apellido;
-        Persona.contadorObjetosPersona++;
-        console.log("Se incrementa el contador: " + Persona.contadorObjetosPersona);
+        this.idPersona = ++Persona.contadorPersonas;
+        //console.log("Se incrementa el contador: " + Persona.contadorObjetosPersona);
     }
 
     get nombre() {
@@ -30,7 +30,7 @@ class Persona { // Clase padre
     }
 
     nombreCompleto(){
-        return this._nombre + ' ' + this._apellido;
+        return this.idPersona+' '+this._nombre + ' ' + this._apellido;
     }
     // Sobreescribiendo el método de la clase padre (object)
      toString(){ //Regresa un String
@@ -108,3 +108,10 @@ console.log(persona1.email);
 console.log(empleado1.email);
 //console.log(Persona.email); No se puede acceder desde la clase
 
+console.log(persona1.toString());
+console.log(persona2.toString());
+console.log(empleado1.toString());
+console.log(Persona.contadorPersonas);
+let persona3 = new Persona('Carla', 'Pertosi');
+console.log(persona3.toString());
+console.log(Persona.contadorPersonas);
