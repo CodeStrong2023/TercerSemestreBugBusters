@@ -2,9 +2,15 @@
 
 
 class Persona { // Clase padre
+
+    static contadorObjetosPersona = 0; //Atributo estático
+    email = "Valor default email"; //Atributo no estático
+
     constructor(nombre, apellido) {
         this._nombre = nombre;
         this._apellido = apellido;
+        Persona.contadorObjetosPersona++;
+        console.log("Se incrementa el contador: " + Persona.contadorObjetosPersona);
     }
 
     get nombre() {
@@ -26,6 +32,22 @@ class Persona { // Clase padre
     nombreCompleto(){
         return this._nombre + ' ' + this._apellido;
     }
+    // Sobreescribiendo el método de la clase padre (object)
+     toString(){ //Regresa un String
+        // Se aplica el polimorfismo que significa = multiples formas en tiempo de ejecución
+        // El método que se ejecuta depende si es una referencia si es tipo padre o hija
+        return this.nombreCompleto();
+    }
+
+    //Metodo static: se asocia a la clase y no a los objetos
+    static saludar(){
+        console.log('Saludo desde este método static');
+    }
+
+    static saludar2(persona){
+        console.log(persona.nombre+' '+persona.apellido);
+    }
+
 }
 
 class Empleado extends Persona{ // Clase hija  
@@ -66,3 +88,23 @@ console.log(persona2.apellido);
 let empleado1 = new Empleado('Maria', 'Gimenez', 'Sistemas');
 console.log(empleado1);
 console.log(empleado1.nombreCompleto());
+
+//Object.prototype.toString Esta es la manera de acceder a atributos y metodos de manera dinamica
+console.log(empleado1.toString());
+console.log(persona1.toString());
+
+//persona1.saludar(); No se utiliza desde el objeto
+Persona.saludar(); //Se utiliza desde la clase
+Persona.saludar2(persona1);
+
+Empleado.saludar();
+Empleado.saludar2(empleado1);
+
+//console.log(persona1.contadorObjetosPersona);
+console.log(Persona.contadorObjetosPersona);
+console.log(Empleado.contadorObjetosPersona);
+
+console.log(persona1.email);
+console.log(empleado1.email);
+//console.log(Persona.email); No se puede acceder desde la clase
+

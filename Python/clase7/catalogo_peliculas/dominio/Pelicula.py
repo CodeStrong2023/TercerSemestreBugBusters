@@ -1,6 +1,6 @@
 class Pelicula:
-    def __int__(self, nombre):
-        not self._nombre = nombre
+    def __init__(self, nombre):
+        self._nombre = nombre
 
     def __str__(self):
         return f'Pelicula: {self.nombre}'
