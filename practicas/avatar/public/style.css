@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("avatar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 700px;
+    height: 500px;
+    margin: 100px auto;
+    background: rgba(227, 248, 255, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.922);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
+    border: 1px solid rgba(227, 248, 255, 1);
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    margin: 10px;
+}
+
+h2{
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+}
+
+#seleccionar-personaje{
+    font-size: 25px;
+    text-align: center;
+}
+
+#seleccionar-personaje input{
+    margin: 10 5px;
+}
+
+#boton-personaje{
+    margin-top: 15px;
+    width: 160px;
+    height: 35px;
+    border: 1px solid #5fc8e2;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #5fc8e2;
+    color: white;
+}
+
+#boton-personaje:hover{
+    background-color:#78daff;
+    border: 1px solid #78daff;
+}
+
+#seleccionar-ataque{
+    text-align: center;
+    margin: 15px;
+}
+
+#mensajes{
+    text-align: center;
+    margin: 15px;
+}
+
+#reiniciar{
+    text-align: center;
+    margin: 15px;
+}

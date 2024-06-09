@@ -1,5 +1,13 @@
 let ataqueJugador;
 let ataqueEnemigo;
+let personajeVida = 3;
+let enemigoVida = 3;
+
+let personajeAtaque = document.getElementById("ataque-personaje");
+let enemigoAtaque = document.getElementById("ataque-enemigo");
+let ganador = document.getElementById("ganador");
+let vidaPersonaje = document.getElementById("personaje-vida");
+let vidaEnemigo = document.getElementById("enemigo-vida");
 
 function iniciarJuego(){
   let botonPersonajeJugador = document.getElementById("boton-personaje");
@@ -51,16 +59,19 @@ function seleccionarPersonajeJugador() {
   
   function ataquePunio(){
     ataqueJugador = "Punio";
+    ataquePersonajeHTML();
     ataqueAleatorioEnemigo();
   }
 
   function ataquePatada(){
     ataqueJugador = "Patada";
+    ataquePersonajeHTML();
     ataqueAleatorioEnemigo();
   }
 
   function ataqueBarrida(){
     ataqueJugador = "Barrida";
+    ataquePersonajeHTML();
     ataqueAleatorioEnemigo();
   }
 
@@ -69,12 +80,41 @@ function seleccionarPersonajeJugador() {
 
     if(ataqueAleatorio == 1){
       ataqueEnemigo = "Punio";
+      ataqueEnemigoHTMl()
     }else if(ataqueAleatorio == 2){
       ataqueEnemigo = "Patada";
+      ataqueEnemigoHTMl()
     }else{
       ataqueEnemigo = "Barrida";
+      ataqueEnemigoHTMl()
     }
-      
+    ganadorPelea(ataqueJugador, ataqueEnemigo);
+  }
+
+  function ataquePersonajeHTML(){ // Escribe en el html el ataque del personaje
+    personajeAtaque.innerHTML = ataqueJugador;
+  }
+
+  function ataqueEnemigoHTMl(){// Escribe en el html el ataque del enemigo
+    enemigoAtaque.innerHTML = ataqueEnemigo;
+  }
+
+  function ganadorPelea(ataqueJugador, ataqueEnemigo){
+    if((ataqueJugador == "Punio" && ataqueEnemigo == "Barrida") || 
+    (ataqueJugador == "Patada" && ataqueEnemigo == "Punio") ||
+    (ataqueJugador == "Barrida" && ataqueEnemigo == "Patada")){
+      ganador.innerHTML = "GANASTE 🎉";
+      vidaEnemigo.innerHTML = --enemigoVida; //restamos la vida del enemigo si nuestro personaje gana
+      if(enemigoVida == 0){
+        alert("Nuesto personaje GANA");
+      }
+    }else{
+      ganador.innerHTML = "PERDISTE 😵";
+      vidaPersonaje.innerHTML = --personajeVida; //restamos la vida de nuestro personaje si el enemigo gana
+      if(personajeVida == 0){
+        alert("Nuesto personaje PIERDE");
+      }
+    }
   }
 
 window.addEventListener('load', iniciarJuego)
