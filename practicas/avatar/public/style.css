@@ -17,8 +17,8 @@ body{
     background: rgba(227, 248, 255, 0.22);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.922);
-    backdrop-filter: blur(3.6px);
-    -webkit-backdrop-filter: blur(3.6px);
+    backdrop-filter: blur(4.0px);
+    -webkit-backdrop-filter: blur(4.0px);
     border: 1px solid rgba(227, 248, 255, 1);
 }
 
@@ -49,15 +49,15 @@ h2{
     height: 35px;
     border: 1px solid #5fc8e2;
     border-radius: 15px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     background-color: #5fc8e2;
     color: white;
 }
 
 #boton-personaje:hover{
-    background-color:#78daff;
-    border: 1px solid #78daff;
+    background-color:#03bafc;
+    border: 1px solid #03bafc;
 }
 
 #seleccionar-ataque{
@@ -73,4 +73,48 @@ h2{
 #reiniciar{
     text-align: center;
     margin: 15px;
+}
+
+#seleccionar-ataque > p{
+    font-size: 20px;
+}
+
+#enemigo-vida, #personaje-vida{
+    font-weight: bold;
+}
+
+#boton-barrida, #boton-patada, #boton-punio{
+    width: 120px;
+    height: 35px;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: #febd00;
+    border: 1px solid #febd00;
+    color: white;
+    margin: 15px;
+}
+
+#boton-barrida:hover, #boton-patada:hover, #boton-punio:hover{
+    background-color: #c22e00;
+    border: 1px solid #c22e00;
+}
+
+#mensaje-ganador{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#boton-reiniciar{
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: #61c5e1;
+    border: 1px solid #61c5e1;
+    color: white;
+}
+
+#boton-reiniciar:hover{
+    background-color: #1a97f0;
+    border: 1px solid #1a97f0;
 }

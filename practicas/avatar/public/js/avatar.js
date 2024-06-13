@@ -8,6 +8,7 @@ let enemigoAtaque = document.getElementById("ataque-enemigo");
 let ganador = document.getElementById("ganador");
 let vidaPersonaje = document.getElementById("personaje-vida");
 let vidaEnemigo = document.getElementById("enemigo-vida");
+let mensajeGanador = document.getElementById("mensaje-ganador");
 
 function iniciarJuego(){
   let botonPersonajeJugador = document.getElementById("boton-personaje");
@@ -55,7 +56,6 @@ function seleccionarPersonajeJugador() {
           enemigoRandom.innerHTML = "Toph"
       }
   }
-  
   
   function ataquePunio(){
     ataqueJugador = "Punio";
@@ -106,13 +106,15 @@ function seleccionarPersonajeJugador() {
       ganador.innerHTML = "GANASTE 🎉";
       vidaEnemigo.innerHTML = --enemigoVida; //restamos la vida del enemigo si nuestro personaje gana
       if(enemigoVida == 0){
-        alert("Nuesto personaje GANA");
+        mensajeGanador.innerHTML = "GANASTE!"
       }
+    }else if(ataqueJugador == ataqueEnemigo){
+      ganador.innerHTML = "EMPATE";
     }else{
       ganador.innerHTML = "PERDISTE 😵";
       vidaPersonaje.innerHTML = --personajeVida; //restamos la vida de nuestro personaje si el enemigo gana
       if(personajeVida == 0){
-        alert("Nuesto personaje PIERDE");
+        mensajeGanador.innerHTML = "PERDISTE!"
       }
     }
   }
