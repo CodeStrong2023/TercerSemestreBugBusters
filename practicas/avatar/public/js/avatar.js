@@ -3,8 +3,6 @@ let ataqueEnemigo;
 let personajeVida = 3;
 let enemigoVida = 3;
 
-let personajeAtaque = document.getElementById("ataque-personaje");
-let enemigoAtaque = document.getElementById("ataque-enemigo");
 let ganador = document.getElementById("ganador");
 let vidaPersonaje = document.getElementById("personaje-vida");
 let vidaEnemigo = document.getElementById("enemigo-vida");
@@ -59,19 +57,16 @@ function seleccionarPersonajeJugador() {
   
   function ataquePunio(){
     ataqueJugador = "Punio";
-    ataquePersonajeHTML();
     ataqueAleatorioEnemigo();
   }
 
   function ataquePatada(){
     ataqueJugador = "Patada";
-    ataquePersonajeHTML();
     ataqueAleatorioEnemigo();
   }
 
   function ataqueBarrida(){
     ataqueJugador = "Barrida";
-    ataquePersonajeHTML();
     ataqueAleatorioEnemigo();
   }
 
@@ -80,38 +75,38 @@ function seleccionarPersonajeJugador() {
 
     if(ataqueAleatorio == 1){
       ataqueEnemigo = "Punio";
-      ataqueEnemigoHTMl()
     }else if(ataqueAleatorio == 2){
       ataqueEnemigo = "Patada";
-      ataqueEnemigoHTMl()
     }else{
       ataqueEnemigo = "Barrida";
-      ataqueEnemigoHTMl()
     }
     ganadorPelea(ataqueJugador, ataqueEnemigo);
   }
 
-  function ataquePersonajeHTML(){ // Escribe en el html el ataque del personaje
-    personajeAtaque.innerHTML = ataqueJugador;
-  }
+  function crearMensaje(){
+    let seccionMensaje = document.getElementById("mensajes");
+    let parrafo = document.createElement("p");
+    parrafo.innerHTML = `Tu personaje atacó con ${ataqueJugador}, el personaje enemigo atacó con ${ataqueEnemigo} - ${ganador}`
 
-  function ataqueEnemigoHTMl(){// Escribe en el html el ataque del enemigo
-    enemigoAtaque.innerHTML = ataqueEnemigo;
+    seccionMensaje.appendChild(parrafo);
   }
 
   function ganadorPelea(ataqueJugador, ataqueEnemigo){
     if((ataqueJugador == "Punio" && ataqueEnemigo == "Barrida") || 
     (ataqueJugador == "Patada" && ataqueEnemigo == "Punio") ||
     (ataqueJugador == "Barrida" && ataqueEnemigo == "Patada")){
-      ganador.innerHTML = "GANASTE 🎉";
+      ganador = "GANASTE 🎉";
+      crearMensaje();
       vidaEnemigo.innerHTML = --enemigoVida; //restamos la vida del enemigo si nuestro personaje gana
       if(enemigoVida == 0){
         mensajeGanador.innerHTML = "GANASTE!"
       }
     }else if(ataqueJugador == ataqueEnemigo){
-      ganador.innerHTML = "EMPATE";
+      ganador = "EMPATE";
+      crearMensaje();
     }else{
-      ganador.innerHTML = "PERDISTE 😵";
+      ganador = "PERDISTE 😵";
+      crearMensaje();
       vidaPersonaje.innerHTML = --personajeVida; //restamos la vida de nuestro personaje si el enemigo gana
       if(personajeVida == 0){
         mensajeGanador.innerHTML = "PERDISTE!"
