@@ -10,10 +10,33 @@ body{
     background-size: cover;
 }
 
+/****** Reglas ******/
+.reglas-juego{
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.1px);
+    -webkit-backdrop-filter: blur(10.1px);
+    border: 1px solid rgba(255, 255, 255, 0.69);
+    border-radius: 10px;
+    width: 400px;
+    margin: 20px 20px;
+    padding: 5px;
+    list-style-position: inside;
+    font-size: 18px;
+}
+
+.reglas-juego h2{
+    font-size: 24px;
+}
+
+
+/****** Juego ******/
+
 .container{
     width: 700px;
-    height: 500px;
-    margin: 100px auto;
+    height: 520px;
+    margin: 0px auto;
     background: rgba(227, 248, 255, 0.22);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.922);
@@ -66,6 +89,7 @@ h2{
 }
 
 #mensajes{
+    font-size: 22px;
     text-align: center;
     margin: 15px;
 }
@@ -91,7 +115,7 @@ h2{
     background-color: #febd00;
     border: 1px solid #febd00;
     color: white;
-    margin: 15px;
+    margin: 5px;
 }
 
 #boton-barrida:hover, #boton-patada:hover, #boton-punio:hover{
@@ -112,6 +136,7 @@ h2{
     background-color: #61c5e1;
     border: 1px solid #61c5e1;
     color: white;
+    margin-bottom: 10px;
 }
 
 #boton-reiniciar:hover{
