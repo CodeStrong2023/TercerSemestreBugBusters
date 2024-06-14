@@ -1,5 +1,5 @@
 package excepciones;
-public class operacionExcepcion extends Exception{
+public class operacionExcepcion extends RuntimeException{
     //Constructor
     public operacionExcepcion(String mensaje){
         super(mensaje);
