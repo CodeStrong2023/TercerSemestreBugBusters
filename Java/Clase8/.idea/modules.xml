@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Clase8.iml" filepath="$PROJECT_DIR$/.idea/Clase8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ManejoExcepciones1/ManejoExcepciones1.iml" filepath="$PROJECT_DIR$/ManejoExcepciones1/ManejoExcepciones1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaBeans/javaBeans.iml" filepath="$PROJECT_DIR$/javaBeans/javaBeans.iml" />
+    </modules>
+  </component>
+</project>

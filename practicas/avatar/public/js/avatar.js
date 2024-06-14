@@ -1,5 +1,12 @@
 let ataqueJugador;
 let ataqueEnemigo;
+let personajeVida = 3;
+let enemigoVida = 3;
+
+let ganador = document.getElementById("ganador");
+let vidaPersonaje = document.getElementById("personaje-vida");
+let vidaEnemigo = document.getElementById("enemigo-vida");
+let mensajeGanador = document.getElementById("mensaje-ganador");
 
 function iniciarJuego(){
   let botonPersonajeJugador = document.getElementById("boton-personaje");
@@ -48,7 +55,6 @@ function seleccionarPersonajeJugador() {
       }
   }
   
-  
   function ataquePunio(){
     ataqueJugador = "Punio";
     ataqueAleatorioEnemigo();
@@ -74,7 +80,38 @@ function seleccionarPersonajeJugador() {
     }else{
       ataqueEnemigo = "Barrida";
     }
-      
+    ganadorPelea(ataqueJugador, ataqueEnemigo);
+  }
+
+  function crearMensaje(){
+    let seccionMensaje = document.getElementById("mensajes");
+    let parrafo = document.createElement("p");
+    parrafo.innerHTML = `Tu personaje atacó con ${ataqueJugador}, el personaje enemigo atacó con ${ataqueEnemigo} - ${ganador}`
+
+    seccionMensaje.appendChild(parrafo);
+  }
+
+  function ganadorPelea(ataqueJugador, ataqueEnemigo){
+    if((ataqueJugador == "Punio" && ataqueEnemigo == "Barrida") || 
+    (ataqueJugador == "Patada" && ataqueEnemigo == "Punio") ||
+    (ataqueJugador == "Barrida" && ataqueEnemigo == "Patada")){
+      ganador = "GANASTE 🎉";
+      crearMensaje();
+      vidaEnemigo.innerHTML = --enemigoVida; //restamos la vida del enemigo si nuestro personaje gana
+      if(enemigoVida == 0){
+        mensajeGanador.innerHTML = "GANASTE!"
+      }
+    }else if(ataqueJugador == ataqueEnemigo){
+      ganador = "EMPATE";
+      crearMensaje();
+    }else{
+      ganador = "PERDISTE 😵";
+      crearMensaje();
+      vidaPersonaje.innerHTML = --personajeVida; //restamos la vida de nuestro personaje si el enemigo gana
+      if(personajeVida == 0){
+        mensajeGanador.innerHTML = "PERDISTE!"
+      }
+    }
   }
 
 window.addEventListener('load', iniciarJuego)
