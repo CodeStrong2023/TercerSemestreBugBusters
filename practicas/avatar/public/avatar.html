@@ -7,6 +7,22 @@
     <title>LA LEYENDA DE AANG: AVATAR</title>
   </head>
   <body>
+    <div class="reglas-juego">
+      <h2>Reglas de juego</h2>
+      <ul>
+        <li>Selecciona un personaje</li>
+        <li>Tu personaje y el enemgio cuentan con 3 vidas</li>
+        <li>Selecciona un ataque</li>
+        <li>El primero en perder las 3 vidas, pierde</li>
+      </ul>
+      <h2>Reglas de combate</h2>
+      <ul>
+        <li>Puño gana a Barrida</li>
+        <li>Patada gana a Puño</li>
+        <li>Barrida gana a Patada</li>
+      </ul>
+    </div>
+
     <div class="container">
       <h1>AVATAR 🔥💧🌱🌪️</h1>
 
@@ -33,6 +49,12 @@
         <h2>Elige tu Ataque</h2>
 
         <p>
+          <button id="boton-punio">Punio 👊🏻</button>
+          <button id="boton-patada">Patada 🦶🏻</button>
+          <button id="boton-barrida">Barrida 🦵🏻</button>
+        </p>
+
+        <p>
           Tu personaje
           <span id="personaje-jugador">nombre del personaje</span> tiene
           <span id="personaje-vida">3</span> vidas
@@ -42,20 +64,10 @@
           <span id="personaje-enemigo">nombre del enemigo</span> del enemigo
           tiene <span id="enemigo-vida">3</span> vidas
         </p>
-
-        <p>
-          <button id="boton-punio">Punio 👊🏻</button>
-          <button id="boton-patada">Patada 🦶🏻</button>
-          <button id="boton-barrida">Barrida 🦵🏻🧎🏻‍♂️</button>
-        </p>
       </section>
 
-      <section id="mensajes">
-        <p>
-          Tu personaje atacó con <span id="ataque-personaje">...</span>, el
-          personaje enemigo atacó con <span id="ataque-enemigo">...</span> -
-          <span id="ganador">ganador</span>
-        </p>
+      <section id="mensajes"> <!--parrafo dinamico generado desde js-->
+        <p id="mensaje-ganador"></p>
       </section>
 
       <section id="reiniciar">
