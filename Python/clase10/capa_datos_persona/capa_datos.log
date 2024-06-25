@@ -1,0 +1,43 @@
+10:06:39 PM:DEBUG [logger_base.py:14] Mensaje a nivel debug
+10:06:39 PM:INFO [logger_base.py:15] Mensaje a nivel info
+10:06:39 PM:WARNING [logger_base.py:16] Mensaje a nivel warning
+10:06:39 PM:ERROR [logger_base.py:17] Mensaje a nivel error
+10:06:39 PM:CRITICAL [logger_base.py:18] Mensaje a nivel critical
+10:18:05 PM:DEBUG [Persona.py:53] 
+            Id Persona: 1,
+            Nombre Juan,
+            Apellido Perez,
+            Email: jperez@gmail.com
+        
+10:19:28 PM:DEBUG [Persona.py:53] 
+            Id Persona: 1,
+            Nombre Juan,
+            Apellido Perez,
+            Email: jperez@gmail.com
+        
+10:19:28 PM:DEBUG [Persona.py:56] 
+            Id Persona: None,
+            Nombre Jose,
+            Apellido Lepez,
+            Email: ljose@gmail.com
+        
+10:20:14 PM:DEBUG [Persona.py:53] 
+            Id Persona: 1,
+            Nombre Juan,
+            Apellido Perez,
+            Email: jperez@gmail.com
+        
+10:20:14 PM:DEBUG [Persona.py:56] 
+            Id Persona: None,
+            Nombre Jose,
+            Apellido Lepez,
+            Email: ljose@gmail.com
+        
+10:20:14 PM:DEBUG [Persona.py:59] 
+            Id Persona: 1,
+            Nombre None,
+            Apellido None,
+            Email: None
+        
+10:33:35 PM:DEBUG [conexion.py:22] Conexion Exitosa: <connection object at 0x000002639EE40E10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+10:33:35 PM:DEBUG [conexion.py:36] Se abrió correctamente el cursor: <cursor object at 0x000002639EABB3E0; closed: 0>
