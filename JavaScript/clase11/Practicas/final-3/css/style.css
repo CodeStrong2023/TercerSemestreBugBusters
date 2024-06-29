@@ -73,12 +73,6 @@ section .color:nth-child(3) {
     }
 }
 
-.box .square:nth-child(1) {
-    top: -50px;
-    right: -60px;
-    width: 100px;
-    height: 100px;
-}
 
 .container {
     position: relative;
@@ -164,3 +158,38 @@ section .color:nth-child(3) {
     color: #fff;
     font-weight: 600;
 }
+
+/* Cuadros*/
+
+.box .square:nth-child(1) {
+    top: -50px;
+    right: -150px; 
+    width: 100px;
+    height: 100px;
+}
+
+.box .square:nth-child(2) {
+    top: 20%;
+    right: -200px; 
+    width: 80px;
+    height: 80px;
+}
+
+
+
+.box .square:nth-child(3) {
+    top: 50%;
+    left: -50%; 
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+}
+
+.box .square:nth-child(4) {
+    top: 70%;
+    left: -70%; 
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+}
+
